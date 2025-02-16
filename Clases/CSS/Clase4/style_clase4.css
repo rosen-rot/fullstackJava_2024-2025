@@ -1,0 +1,31 @@
+/*El uso de float es de la dinosaurio, antes se usaba mucho pero como deja todo "flotando" queda indeterminada la posición y genera problemas con las posiciones*/
+
+.inline{
+    /*Despliega todo en una sola linea, pero no puede cambiar tamaños*/
+    display: inline;
+}
+
+.block{
+    /*Despliega el elemento como un bloque, no puede haber nada en la misma línea, pero sí permite cambiar tamaños*/
+    display: block;
+}
+
+.inline-block{
+    /*Permite colocar los elementos en una misma línea y dar un tamaño específico, al estar los div con enter, se genera un espacio. Tendría que estar todo en la misma línea para que queden pegados sin ese espacio, en tal caso, para evitarlo usamos flex*/
+    display: inline-block;
+    width: 300px;
+    border: 1px solid black;
+    vertical-align: top; /*middle y bottom los alinea en base al valor*/
+}
+
+#div1{
+    height: 150px;
+}
+
+#div2{
+    height: 500px;
+}
+
+#div3{
+    height: 300px;
+}

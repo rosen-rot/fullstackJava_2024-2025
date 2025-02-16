@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de presentación Naruto</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <head>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#" onclick="cambiar_texto(this)">Perfil</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="bienvenido()">Inicio</a></li>
+                <li><a href="#">Mi perfil</a></li>
+                <li><a href="#">Encontrar conexión</a></li>
+                <!--Al hacerle click a esto, ocurre la función eliminar()-->
+                <li><a class="cerrar-sesion" onclick="eliminar(this)" href="#">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </head>
+
+
+     <!-- Tarjeta de perfil -->
+     <main>
+        <section class="tarjeta-usuario-contenedor">
+            <div class="bloqueColor"></div>
+            <div class="contenidoUsuario">
+                <img class="foto-perfil" src="img/narutoicon.jpg" alt="Foto de Naruto Uzumaki" onmouseover="cambia_imagen(this)" onmouseout="vuelve_imagen(this)">
+                <div class="info-usuario">
+                    <h1 id ="nombre"> Naruto Uzumaki</h1>
+                    <span class="span1">Konoha, País del Fuego</span>
+                    <span>Séptimo Hokage | Líder de la Aldea Oculta de la Hoja | Amante del ramen y la amistad</span>
+                    <p id = "contenido">Apasionado por proteger a su aldea y cumplir su sueño de ser un líder reconocido y respetado. Con un espíritu inquebrantable y una fuerza que trasciende límites, Naruto trabaja incansablemente por la paz y la unidad entre naciones shinobi.</p>
+                </div>
+                <button onclick="editar_perfil()">Editar perfil</button>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-contenido">
+                    <h2>Educación</h2>
+                    <span>Academia Ninja de Konoha <br>
+                        Graduado. <br>
+                        Técnica destacada: Clones de Sombra (Kage Bunshin no Jutsu)
+                    </span>
+                </div>
+            </footer>
+        </section>
+
+    <!-- Solicitudes de conexión -->
+        <section class="solicitudes-contenido">
+            <h1>Solicitudes de conexión (2)</h1>
+            <div class="seccion1">
+                <img id = "solicitud" src="img/konohamaru.jpg" alt="Konohamaru Sarutobi">
+                <img id= "opcion" src="img/option.jpg" alt="Aceptar o rechazar solicitud">
+            </div>
+            <div class="seccion2">
+                <img id = "solicitud" src="img/sasuke.jpg" alt="Sasuke Uchiha">
+                <img id= "opcion" src="img/option.jpg" alt="Aceptar o rechazar solicitud">
+            </div>
+        </section>
+
+    <!-- Tus conexiones -->
+        <section class="conexiones-contenido">
+            <h1 id="titulo-conexiones">Tus conexiones (+500)</h1>
+            <div class="seccion3">
+                <div class="conexion">
+                    <img id= "img-conexion" src="img/hinata.jpg" alt="Hinata Hyuga">
+                    <h3>Hinata Hyuga</h3>
+                </div>
+                <div class="conexion">
+                    <img id= "img-conexion" src="img/iruka.jpg" alt="Iruka Umino">
+                    <h3>Iruka Umino</h3>
+                </div>
+                <div class="conexion">
+                    <img id= "img-conexion" src="img/kakashi.jpg" alt="Kakashi Hatake">
+                    <h3>Kakashi Hatake</h3>
+                </div>
+                <div class="conexion">
+                    <img id= "img-conexion" src="img/shikamaru.jpg" alt="Shikamaru Nara">
+                    <h3>Shikamaru Nara</h3>
+                </div>
+                <div class="conexion">
+                    <img id= "img-conexion" src="img/sakura.jpg" alt="Sakura Haruno">
+                    <h3>Sakura Haruno</h3>
+                </div>
+            </div>
+        </section>
+
+        <input type="text" id="buscador" placeholder="Buscar...">
+        <button onclick="busqueda()"> Buscar </button>
+        
+    </main>
+
+    <!-- Etiqueta para relacionar el HTML con el script JS, se recomienda que esté al final-->
+    <script src="js/script.js"></script>
+    
+
+</body>
+</html>

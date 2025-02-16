@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container1{
+    background-color: red;
+    width: 1200px;
+    height: 200px;
+    /*El display flex va en el contenedor padre, no en los hijos. Esto permite dejar todo en el mismo espacio, la misma línea*/
+    display: flex;
+    align-items: center;
+    /*Acomodo vertical
+    align-items=strech; Alarga los elementos
+    align-items=center; Los centra de manera vertical
+    align-items=flex-start los pone en la parte superior
+    align-items=flex-end los pone en la parte inferior*{
+
+    Acomodo horizontal
+    justify-content=flex-start; Los pone en la parte izquierda.
+    justify-content=flex-end; Los pone en la parte derecha.
+    justify-content=center; Los centra de manera horizontal.
+    justify-content=space-between; Arroja los elementos a los extremos y los separa a la misma distancia.
+    justify-content=space-around; Deja el mismo espacio entre los elementos pero deja a mitad del espacio con los bordes.
+    justify-content=space-evenly; Coloca el mismo espacio entre los elementos, entre ellos y los extremos.
+
+    Dirección
+    flex-direction=row; Los elementos se colocan en la misma línea.
+    flex-direction=row-reverse; Los elementos se colocan en la misma línea pero al revés.
+    flex-direction=column; Los elementos se colocan uno debajo del otro.
+    flex-direction=column-reverse; Los elementos se colocan uno debajo del otro pero al revés.
+
+    */
+}
+
+.s1, .s2, .s3{
+    width: 200px;
+    background-color: yellow;
+}
+
+.container2{
+    background-color: burlywood;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+
+/* container >div */
+.section1, .section2, .section3{
+    /*section1 = 1 =1/3
+    section2 = 1 =1/3
+    section3 = 1 =1/3
+    TOTAL = 3
+    
+    Los divide en 3 partes iguales*/
+    flex: 1;
+    background-color: white;
+}
+
+.section2{
+    flex:2;
+    /*Ahora section2 se divide en 2 partes iguales
+    section1 = 1 = 1/4
+    section2= 2 = 2/4 = 1/2*
+    section 1 = 1/4 
+    TOTAL = 4*/
+}
+
+.section3{
+    flex: 3;
+
+    /*
+    section1 = 1 = 1/6
+    section2= 2 = 2/6 = 1/3*
+    section3 =3/6 = 1/2
+    TOTAL = 6*/
+}
+
+/*Por defecto la posición de los elementos es estática, es decir, que no se mueven, la primera posición que nos permite hacer que se mueva, es la relativa: top, left, right, bottom*/
+.contenedor{
+    border: 3px solid black;
+    height: 1500px;
+    position: relative;
+}
+
+.elemento{
+    background-color: gray;
+    padding: 10px;
+
+    /*Se mueve en base al contenedor padre, la condición es que el contenedor debe tener la propiedad position: relative, va a ignorar el resto de los elementos*/
+    position: absolute;
+}
+
+/*El margen afecta a todos los elementos, en cambio con relative, no respeta a nada y se sobrepone, se mueve en base a la posición original y el resto de los elementos de quedan*/
+.elemento-principal{
+    background-color: yellow;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    right: 30px;
+}
+
+/*position: fixed , está fijo hasta moverse en el scroll.
+
+position: sticky; se fijo cuando se mueve con el scroll. 
+
+z-index: ; es la profundidad adelante/atras de los elementos, el numero más alto va al frente y el más bajo va al fondo.*/
+
+
