@@ -1,0 +1,27 @@
+/*    CSS Reset      
+
+* significa todos los elementos, se recomienda que sea lo primero.
+*/
+*{ /*Todo el contenido se rige por las siguientes reglas*/
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+/*    MODELOS DE CAJA   */
+.box{
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+    /*margin: 20px; espacio entre mi elemento y el resto de la página
+    margin-top: 40px;  -top, -right, -bottom, -left
+    margin: 100px 150px; arriba-abajo, izq-der*/
+    margin: 50px 10px 100px 200px; /*arriba der abajo izq
+
+    /*Padding: margen interno, espacio entre donde comienza el elemento y lo que hay adentro, funciona con todas las opciones de maargin también*/
+    padding: 20px;
+
+    border: 3px dotted burlywood; /*solid, dotted, dashed, doubles*/
+}
+

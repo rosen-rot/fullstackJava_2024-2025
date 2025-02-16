@@ -1,0 +1,62 @@
+<!-- | FORMULARIO |
+ Los formularios web son uno de los principales puntos de interacción entre un usuario y un sitio web o aplicación. Los formularios permiten a los usuarios la introducción de datos, que generalmente se envían a un servidor web para su procesamiento y almacenamiento (consulta Enviar los datos de un formulario más adelante en el módulo), o se usan en el lado del cliente para provocar de alguna manera una actualización inmediata de la interfaz (por ejemplo, se añade otro elemento a una lista, o se muestra u oculta una función de interfaz de usuario).
+ 
+Aprendizaje activo: La implementación de nuestro formulario HTML
+De acuerdo, intentemos crear el HTML para nuestro formulario. Vamos a utilizar los elementos HTML siguientes: 
+<form>, <label>, <input>, <textarea> y <button>.
+
+
+| El elemento <form> |
+Todos los formularios comienzan con un elemento <form>, como este:
+<form action="/my-handling-form-page" method="post"></form>
+
+Todos sus atributos son opcionales, pero es una práctica estándar establecer siempre al menos los atributos action y method:
+
+El atributo action define la ubicación (URL) donde se envían los datos que el formulario ha recopilado cuando se validan.
+
+El atributo method define con qué método HTTP se envían los datos (generalmente get o post).
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+</head>
+<body>
+    <!-- FORMULARIO -->
+    <form action="#" method ="post"> <!--formulario que se envían los datos, method es la manera en que se envía.-->
+        <div>
+            <label for = "id_nombre" >Nombre: </label> <!--for se refiere al id del campo al que se quiere enlazar-->
+            <input type="text" id = "id_nombre" name="nombre"> <!-- un input de tipo texto que se almacena en la variable nombre y se define un identificador-->
+        </div>
+        <div>
+            <label for = "id_edad" >Edad: </label>
+            <input type="number" id = "id_edad" name="edad">
+        </div>
+        <div>
+            <label for = "id_password" >Contraseña: </label>
+            <input type="password" id = "id_password" name="password"> <!--Oculta los caracteres-->
+        </div>
+        <div>
+            <label for = "id_fecha" >Fecha: </label>
+            <input type="date" id = "id_date" name="date"> 
+        </div>
+        <div>
+            <label for = "id_email" >Fecha: </label>
+            <input type="email" id = "id_email" name="email"> <!--Hasta enviar formulario revisa que sea correcto-->
+        </div>
+        <div>
+            <label for="casado_id">casado</label>
+            <input type = "radio" name =estado_civil value="casado" id="casado_id">
+            <label for="soltero_id">soltero</label>
+            <input type = "radio" name =estado_civil value="soltero" id="soltero_id">
+            
+        </div>
+<!--Hay más pero me dio zzz-->
+    </form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!-- APUNTES DE CLASE
+ 
+|  DOCUMENTO | Al nombrar un documento usamos este formato: nombre.formato
+En este caso es index.html (index es el nombre estándar del documento principal de un sitio web) 
+
+|  ETIQUETAS | se usa <nombre_etiqueta atributos ="valor" (apertura de la etiqueta)
+y continúa abajo con </nombre_etiqueta> (cierre de la etiqueta).
+
+Se pueden usar etiquetas dentro de etiquetas generando hijos y hermanos mediante anidación (tabulado).
+
+Las etiquetas más importantes:
+<html> Dicta que es un archivo html (tiene de hijos a head y body)
+    <head> No son vistas por el usuario, aquí se encuentra el cerebro: metadatos, estilos, lenguaje
+    <body> Contiene todo lo que se puede ver mediante su navegador
+    </body>
+    </head>
+</html>
+
+
+| ATAJOS | Podemos usar ! + Enter o HTML_5 + Enter
+
+-->
+
+<!DOCTYPE html> <!-- HTML 5-->
+<html lang="en"> <!-- Tipo de documento HTML, lang = "idioma" es el lenguaje del sitio-->
+<head> 
+    <meta charset="UTF-8"> <!--indica al navegador la codificación de caracteres que se utilizará en un documento
+    UTF-8 es un formato de codificación de caracteres Unicode que permite usar emojis y otros caracteres que no están en el conjunto de caracteres ASCII.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--se utiliza para controlar el tamaño y la escala de una página web en función del dispositivo en el que se visualiza.
+    width=device-width: Establece el ancho de la página web en función del ancho de la pantalla del dispositivo. 
+    initial-scale=1.0: Define el nivel de zoom inicial de la página web cuando se carga. -->
+    <title>Clase 1</title> <!-- Se visualiza en la pestaña -->
+</head>
+<body>
+    <!--      titulos       -->
+    <h1> Titulo principal </h1>
+    <h2> Encabezado 2 </h2>
+    <h3> Encabezado 3 </h3>
+    <h4> Encabezado 4 </h4>
+    <h5> Encabezado 5 </h5>
+    <h6> Encabezado 6 </h6>
+
+    <p> <!--párrafo-->
+        Esto es un <br> <!--break es un salto de línea--> --párrafo--.
+    </p>
+    <p>
+        <!-- Lorem es para mostrar cómo se vería el espacio con texto para mostrarlo-->
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore repellat nemo soluta quod eligendi, esse minus molestias ea natus eos incidunt veniam, laudantium ullam tempora nostrum hic deserunt saepe qui.
+        
+         <strong> Negrita semántica</strong> <!--se debería utilizar cuando se va a hacer énfasis en un texto, por ejemplo, algo que debería leerse en voz alta, para que los lectores (o quienes escuchan) lo tengan muy en cuenta.-->
+         <b> Negrita estética </b> <!-- |Bold| se debería usar para el aspecto visual únicamente, si el texto entre dichas etiquetas no necesariamente es más importante o no requiere más énfasis que el resto-->
+         <em> Cursiva semántica</em> <!--Lo mismo ocurre con <em> (font-style italic) e <i>, siendo <em> el elemento que agrega el toque semántico, e <i> el del aspecto visual únicamente.-->
+         <i> Cursiva estética </i>
+         <u> Subrayado </u>
+    </p>
+
+    <h2>Lista desordenada</h2> <!-- No numerada, ordenada mediante * -->
+    <!-- Unordered List  -->
+    <ul>
+        <li> Manzana </li> <!--List Item-->
+        <!--Para generar una cantidad específicas de items: li*n-->
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <h2>Lista ordenada</h2><!-- Lista numerada  -->
+    <ol> <!--Si usamos <ol start="9"> indicamos que la lista parte desde el número 9, luego iría 10 y así-->
+        <li>Naruto</li>
+        <li>Dandandan</li>
+        <li>Fairy Tail</li>
+    </ol>
+
+    <h2> TABLAS </h2> <!--No es necesario usar etiquetas semánticas: thead y tbody, pero ayudan a que el sitio web identifique mejor el contenido-->
+    <table>
+        <thead> <!-- |table header| Encabezado de la tabla-->
+            <tr> <!-- |Table row| Fila de la tabla, lo que se escriba dentro será una única fila.
+                También se puede usar tr*n-->
+                
+                <th>Nombre</th> <!--Titulos de la tabla-->
+                <th>Apellido</th>
+                <th>E-mail</th>
+            </tr>
+            
+        </thead> 
+        <tbody> <!--Cuerpo de la tabla, acá se escriben las filas de la tabla-->
+            <tr> 
+                <td>Rosenrot</td> <!--Table data, primera columna-->
+                <td>Rammstein</td> <!--Table data, segunda columna-->
+                <td>rosenrot@gmail.com</td> <!--Table data, tercera columna-->              
+            </tr>
+            <tr>
+                <td>Nial</td> 
+                <td>Monroe</td> 
+                <td>nial.monmon@gmail.com</td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- | ETIQUETA <img> |
+
+    <img>  representa una imagen en el documento, contiene un atributo src (source) que especifica la ruta de acceso del archivo de imagen, usa otro atributo alt que indica el texto alternativo de la imagen.
+
+    --- | ETIQUETA <a> | 
+
+    <a> (anchor) permite crear un enlace a otras páginas de internet, archivos o rutas dentro de la misma página, direcciones de correo, o cualquier otra URL. Cualquier etiqueta puede estar dentro de anchor.
+        
+    Tiene el atributo href y target:
+    href=”URL_o_RUTA_destino”
+    target: con valor ”self” o “_blank”, dependiendo de si quieres que el enlace se abra en la misma página o en una pestaña nueva.
+    -->
+    <img src="img/bonita.jpg" alt="Imagen bonita">
+
+    <p>
+        <a href="https://www.google.com/search?client=opera-gx&q=etiqueta+a+html&sourceid=opera&ie=UTF-8&oe=UTF-8">Haz click aquí para saber más</a>
+    </p>
+    <!--Podemos asignarle una imagen al link creando la etiqueta <a>, asignas el href al link y el target, mientras que dentro de a etiqueta declaras a la <img>-->
+</body>
+</html>

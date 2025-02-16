@@ -1,0 +1,118 @@
+/* | CSS: Cascade Style Sheets | Estiliza el HTML que creamos
+
+Selector de etiqueta
+
+etiqueta{
+    propiedad: valor;
+}*/
+
+h2{
+    color:red; /*Cambia el color*/
+    font-size: 40px; /*Cambia el tamaño*/
+}
+
+/*Selector de clase, la clase puede ir a múltiples elementos al aplicar la class ="rojo" en las etiquetas de HTML, las etiquetas pueden tener múltiples clases.
+
+.clase{
+    propidad: valor;
+}*/
+
+.rojo{
+    color:red;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+/*Selector de id selecciona de acuerdo a un id asignado la etiqueta
+#id{
+    propiedad = valor;
+}*/
+
+
+#parrafo_especial{
+    color:red;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: wavy;
+}
+
+/*JERARQUÍA id > clases > etiqueta */
+
+/*Si quiero seleccionar una etiqueta dentro de otra etiqueta*/
+
+p strong{ /*Etiqueta strong dentro de p*/
+    color:aqua;
+    text-transform: uppercase;
+}
+
+div a { /*Aplica a todos los <a> que estén en un div*/
+    text-decoration: line-through;
+}
+
+div > a { /*El descendiente directo del div es afectado, es decir, si tenemos el div > a(afectado) > p > a(no es afectado)*/
+    text-decoration: line-through;
+}
+
+/*Se pueden seleccionar elementos por atributos*/
+
+input[type="number"]{ /*Se ven afectados todos los input de tipo number*/
+    color:blue;
+}
+
+textarea, input { /*A este elemento y esto elemento aplica:*/
+    border: 3xp solid magenta;
+}
+
+div.title p{ /*El div que tiene la clase title es afectada*/
+    color:blue;
+}
+
+
+/* PROPIEDADES DE COLORES */
+
+.colores{ /*Un color se puede modificar colocando el nombre del color, pero es limitante, por eso podemos selecionarlo mediante RGB
+    color:lightsalmon;
+    color: rgba(111, 192, 243, .5);
+    color: rgb(111, 192, 243);*/
+    color: white;
+    background-color: #801A15;
+}
+
+
+
+/* PROPIEDADES DE TEXTO */
+#texto{
+    text-align: justify; /*alineación de texto, por defecto está a la izquierda. puede ser left, center, right, justify*/
+    text-decoration: underline; /*subraya el texto, puede ser un line-through (tachar), overline (línea arriba)*/
+    font-style: italic; /*estilo de letra, italic o normal*/
+    font-weight: lighter; /*Depende del tipo de letra y varía de acuerdo a su peso (gruesa - delgada)*/
+    font-size: 20px; /*Tamaño de letra, puede ser pt, em*/
+    font-family: fantasy; /*tipografía, serif, monospace, cursiva*/
+}
+
+/* PROPIEDADES DE TAMAÑO */
+.tamaño{
+    width: 400px; /*ancho*/
+    height: 50x; /*largo*/
+    background-color: bisque;
+}
+
+
+/* PROPIEDADES DE BACKGROUND */
+.background{
+    width: 400px;
+    height: 59px;
+    border: 1px solid black;
+
+    background-color: aqua;
+    background-image: url(../img/codingdojo.jpeg);/*.. es volver un espacio hacia atrás, si fuera más de uno, debería ser ../../ , un ./ vuelve a la principal*/
+    background-repeat: no-repeat; /*la imagen no se repite, puede ser x o y, se repeterá en horizontal o vertical.*/
+    background-size: contain; /*cover estira la imagen verticalmente, contain: lo estiera horizontal*/
+    background-position: center;
+
+    /*puedes usar background: url() no-repeat*/
+}
+
+/*Si quisiera centrar un div cuadrado con margin 10x auto/*
