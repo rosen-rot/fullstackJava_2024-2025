@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module Vehiculo_Garage {
-}
