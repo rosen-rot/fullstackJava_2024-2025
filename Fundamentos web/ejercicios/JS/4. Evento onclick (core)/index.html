@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Onclick</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Petlopedia</h1>
+        <input type="text" placeholder="Buscar mascotas">
+        <button onclick="cambiarBoton(this)">Iniciar sesión</button>
+    </header>
+    <div class="container">
+        <main>
+            <div class = "card">
+                <h2>Akita</h2>
+                <p><strong>Plural: </strong> Akitas</p>
+                <p>Perro grande de gran esencia y dignidad.</p>
+
+                <div class="likes">
+                    <button class="likeButton" onclick="handleLike(this)">Me gusta</button>
+                    <span class="likeCount">22 me gusta</span>
+                </div>
+            </div>
+
+            <div class = "card">
+                <h2>Akita Americano</h2>
+                <p><strong>Plural: </strong> Akitas Americanos</p>
+                <p>Bastante reservado ante los desconocidos que avista desde lejos, sin embargo, no muestra un comportamiento agresivo</p>
+
+                <div class="likes">
+                    <button class="likeButton" onclick="handleLike(this)">Me gusta</button>
+                    <span class="likeCount">22 me gusta</span>
+                </div>
+            </div>
+
+            <div class = "card">
+                <h2>Gato Tuxedo</h2>
+                <p><strong>Plural: </strong> Gatos tuxedos</p>
+                <p>Poseen un pelaje bicolor que parece alternarse entre el blanco y el negro. Se les conoce por tener una personalidad muy marcada y juguetona que busca relacionarse con sus humanos.</p>
+
+                <div class="likes">
+                    <button class="likeButton" onclick="handleLike(this)">Me gusta</button>
+                    <span class="likeCount">22 me gusta</span>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <p>Petlopedia está definida por TI</p>
+            <button onclick="ocultar(this)">Agregar Definición</button>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo local</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Barra de navegación-->
+    <header>
+        <h1>Tiempo Local</h1>
+        <nav>
+        <!--Es recomendable que las barras de navegación se agrupen en listas-->
+            <ul>
+                <li><a href="#" onclick="cambiar_elemento(this)">Buenos Aires</a></li>
+                <li><a href="#" onclick="cambiar_elemento(this)">Ciudad de México</a></li>
+                <li><a href="#" onclick="cambiar_elemento(this)">Santiago</a></li>
+                <li><a href="#" onclick="cambiar_elemento(this)">Sao Paulo</a></li>
+                <li><a href="#" onclick="cambiar_elemento(this)">Quito</a></li>
+            </ul>
+        </nav>
+        <label for="unit-select">Mostrar temperatura en</label>
+        <select id="unit-select">
+            <option value="celsius">°C</option>
+            <option value="fahrenheit">°F</option>
+        </select>
+    </header>
+
+    <main>
+        <h2>Buenos Aires</h2>
+        <div class="forecast">
+            <div class="forecast-card">
+                <img src="https://via.placeholder.com/50" alt="Nublado">
+                <h3>Hoy</h3>
+                <p>Nublado</p>
+                <p id="temp0">22°C / 15°C</p>
+            </div>
+            <div class="forecast-card">
+                <img src="https://via.placeholder.com/50" alt="Lluvioso">
+                <h3>Mañana</h3>
+                <p>Lluvioso</p>
+                <p id="temp1">20°C / 13°C</p>
+            </div>
+            <div class="forecast-card">
+                <img src="https://via.placeholder.com/50" alt="Tormentas">
+                <h3>Miércoles</h3>
+                <p>Tormentas</p>
+                <p id="temp2">18°C / 11°C</p>
+            </div>
+            <div class="forecast-card">
+                <img src="https://via.placeholder.com/50" alt="Parcialmente nublado">
+                <h3>Jueves</h3>
+                <p>Parcialmente nublado</p>
+                <p id="temp3">21°C / 14°C</p>
+            </div>
+            <div class="forecast-card">
+                <img src="https://via.placeholder.com/50" alt="Soleado">
+                <h3>Viernes</h3>
+                <p>Soleado</p>
+                <p id="temp4">24°C / 17°C</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Detente! Tiempo de cookies. Usamos cookies (tristemente, no las comestibles) para personalizar contenido y anuncios, proporcionar funciones de redes sociales y analizar nuestro tráfico. <a href="#">Lee más...</a> <button onclick="eliminar_cookies()">Acepto</button></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

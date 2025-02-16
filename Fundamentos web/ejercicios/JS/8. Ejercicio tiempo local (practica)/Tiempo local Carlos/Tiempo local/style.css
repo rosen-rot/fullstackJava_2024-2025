@@ -1,0 +1,84 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Open Sans", serif;
+}
+
+header{
+    background-color: #3499ff;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none; /* eliminar las viñetas (puntitos) de la lista*/
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0; /*espacio arriba y abajo  (ArribaAbajo(20) izqDer(0)*/
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* eliminar el subrayado de los enlaces*/
+
+}
+
+form select{
+    padding: 5px;
+}
+
+main{
+    text-align: center;
+}
+
+main h2{
+    font-size: 45px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.semana{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: -1px 2px 8px opx rgba(0,0,0,0.75);
+    width: 130px;
+    height: 200px ;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+
+.card img{
+    width: 70px;
+}
+
+.card p {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: fixed; /* para que se mantenga en la misma posición */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer button {
+    background-color: yellow;
+    padding: 10px;
+    margin-left: 10px;
+}

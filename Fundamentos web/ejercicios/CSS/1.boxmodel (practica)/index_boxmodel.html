@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .box {
+            height: 200px;
+            width: 450px;
+            margin:20px;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            color: white;
+        }
+        .box1 {
+            background-color: lightseagreen;
+        }
+        .box2 {
+            background-color: fuchsia;
+        }
+        .box3 {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <hr>
+    <div class="container">
+        <div class="box box1">¡Hola! Soy el primer div de color light sea green.</div>
+        <div class="box box2">¡Hola! Soy el segundo div fucsia.</div>
+        <div class="box box3">¡Hola! Soy el tercer div azul marino.</div>
+    </div>
+</body>
+</html>

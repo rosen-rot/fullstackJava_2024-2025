@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libroteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--  Barras de navegación  -->
+    <header>
+        <nav class="navbar1">
+            <div class="logo">
+                <a href="#" id="titulo_libroteca">Libroteca</a>
+                <img src="img/logo.png" alt="Libroteca">
+            </div>
+            <ul class="nav-buttons">
+                <li><button id="inicio-sesion" onclick="inicioSesion()">Inicio de sesión</button></li>
+                <li><button id="registro">Registro</button></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar2">
+            <ul class="nav-links-navbar2">
+                <li><img src="img/libro.png" alt="libro"><a>Elige tu libro</a></li>
+                <li><img src="img/check.png" alt="check"><a>Revisa disponibilidad</a></li>
+                <li><img src="img/separalo.png" alt="separalo"><a>Sepáralo</a></li>
+                <li><img src="img/shipping.png" alt="shipping"><a>Recíbelo</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar3">
+            <ul class="nav-links-navbar3">
+                <li><a href="#" onclick="cambiar_titulo(this)">Ficción</a></li>
+                <li><a href="#" onclick="cambiar_titulo(this)">Históricos</a></li>
+                <li><a href="#" onclick="cambiar_titulo(this)">Tecnología</a></li>
+                <li><a href="#" onclick="cambiar_titulo(this)">Autoayuda</a></li>
+                <li><a href="#" onclick="cambiar_titulo(this)">Poesía</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--  Cartas de libros  -->
+    <main>
+        <div class="titulo_main">
+            <h2 id="title_select"> TODOS LOS LIBROS</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card1">
+                <img src="img/cien.jpg" alt="Cien años de soledad">
+                <p>Cien años de soledad</p>
+                <p><b>Gabriel García Márquez</b></p>
+                <button onclick="cambiarEstadoBoton(this)">Rentar</button>
+            </div>
+            <div class="card1">
+                <img src="img/rayuela.jpg" alt="Rayuela">
+                <p>Rayuela</p>
+                <p><b>Julio Cortázar</b></p>
+                <button onclick="cambiarEstadoBoton(this)">Rentar</button>
+            </div>
+            <div class="card1">
+                <img src="img/travesuras.jpg" alt="Travesuras de la niña mala">
+                <p>Travesuras de la niña mala</p>
+                <p><b>Mario Vargas Llosa</b></p>
+                <button onclick="cambiarEstadoBoton(this)">Rentar</button>
+            </div>
+        </div>
+
+    </main>
+
+<!--  Pie de página  -->
+    <footer>
+        <p>Todos los derechos reservados. Libroteca</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

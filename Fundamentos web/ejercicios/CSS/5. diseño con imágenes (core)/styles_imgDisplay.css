@@ -1,0 +1,33 @@
+.top {
+    background-color: #58A633;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planta, .agua {
+    margin: 0px 110px;
+}
+
+.middle {
+    background-color: #D94F30;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.bottom {
+    background-color: #5DC4EC;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

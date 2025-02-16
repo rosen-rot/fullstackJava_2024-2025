@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario</title>
+</head>
+<body>
+    <h1>¡Regístrate y únete a la comunidad!</h1>
+    <form action="/registro" method="post"></form>
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" />
+        </div>
+        <br> <!-- Separación con <br>: Agregar saltos de línea para espaciar los campos  -->
+        <div>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" />
+        </div>
+        <br>
+        <div>
+            <label for="correo">Correo electrónico: </label>
+            <input type="text" id="correo" name="correo"/>
+        </div>
+        <br>
+        <div>
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" id="contraseña" name="contraseña" />
+        </div>
+        <br>
+        <div>
+            <label for="confirmar_contraseña">Confirmar contraseña: </label>
+            <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" />
+        </div>
+        <br>
+        <div>
+            <label for="fecha_nacimiento">Fecha de nacimiento: </label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" />
+        </div>
+        <br>
+        <!--<fieldset> Uso de <fieldset> y <legend>: Mejora la agrupación visual de los campos relacionados, como el género.-->
+        <div>
+            <legend> Género: </legend>
+            <input type="radio" id="Masculino" name="genero" value="Masculino" />
+            <label for="Masculino">Masculino </label>
+            <input type="radio" id="Femenino" name="genero" value="Femenino" />
+            <label for="Femenino">Femenino </label>
+            <input type="radio" id="Prefiero_no_decir" name="genero" value="Prefiero no decir" />
+            <label for="Prefiero no decir">Prefiero no decir </label>
+        </div>
+        <!--</fieldset>-->
+        <br>
+        <div>
+            <input type="checkbox" id="acepto" name="acepto" />
+            <label for="acepto"> Suscribete a nuestro boletín de noticias</label>
+        </div>
+        <br>
+        <div>
+            <legend for="description">Descripción de mí mismo: </legend>
+            <textarea id="description" name="description" rows="4" cols="30"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="intereses">Selecciona tus intereses: </label>
+            <select id="intereses" name="intereses">
+                <option value="musica">Música</option>
+                <option value="deportes">Deportes</option>
+                <option value="viajes">Viajes</option>
+                <option value="tecnologia">Tecnología</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Registrarse" />
+        </div>
+    </form>
+</body>
+</html>
